@@ -1,0 +1,21 @@
+name: EnderQuickStash
+version: ${project.version}
+main: pl.enderquickstash.EnderQuickStash
+api-version: '1.21'
+description: Quickly stash items into your Ender Chest with a left-click.
+author: YourName
+
+commands:
+  enderquickstash:
+    description: Main command for EnderQuickStash plugin.
+    aliases: [eqs]
+    usage: /eqs reload
+    permission: enderquickstash.admin
+
+permissions:
+  enderquickstash.use:
+    description: Allows using the quick-stash feature.
+    default: true
+  enderquickstash.admin:
+    description: Allows reloading the plugin configuration.
+    default: op

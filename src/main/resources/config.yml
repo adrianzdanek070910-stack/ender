@@ -1,0 +1,30 @@
+# EnderQuickStash Configuration
+# Plugin for quickly stashing items into your Ender Chest via left-click.
+
+settings:
+  # Should the plugin consume only one item from the stack, or the entire stack?
+  # true  = moves the entire held item stack at once
+  # false = moves items one by one (single item per click)
+  transfer-whole-stack: true
+
+  # Play a sound when an item is successfully stashed
+  play-sound-on-success: true
+
+  # Play a sound when the Ender Chest is full
+  play-sound-on-fail: true
+
+  # Cooldown in milliseconds between stash actions per player (prevents spam-clicking)
+  # Set to 0 to disable cooldown
+  cooldown-ms: 250
+
+messages:
+  # Color codes: use & followed by a color code character
+  # Supported: &0-&9, &a-&f, &k-&o, &r
+  prefix: "&8[&5EnderQuick&dStash&8] &r"
+
+  item-stashed: "&aUmieszczono &e{item} &aw Ender Chescie!"
+  ender-chest-full: "&cBrak miejsca w Ender Chescie!"
+  hand-empty: "&eNie trzymasz żadnego przedmiotu."
+  no-permission: "&cNie masz uprawnień do używania tej funkcji."
+  plugin-reloaded: "&aKonfiguracja pluginu została przeładowana."
+  cooldown: "&eZaczekaj chwilę przed kolejnym odłożeniem."
